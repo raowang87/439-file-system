@@ -1,0 +1,133 @@
+CLS_CODE_DATA	gdt.c	60
+CLS_SYSTEM	gdt.c	59
+DEFINES	Make.vars	3
+Elf32_Addr	process.c	139
+Elf32_Ehdr	process.c	150
+Elf32_Half	process.c	140
+Elf32_Off	process.c	139
+Elf32_Phdr	process.c	171
+Elf32_Word	process.c	139
+GRAN_BYTE	gdt.c	66
+GRAN_PAGE	gdt.c	67
+NO_RETURN	process.c	21
+PE32Ax	process.c	144
+PE32Hx	process.c	146
+PE32Ox	process.c	145
+PE32Wx	process.c	143
+PF_P	exception.h	5
+PF_R	process.c	196
+PF_U	exception.h	7
+PF_W	exception.h	6
+PF_W	process.c	195
+PF_X	process.c	194
+PT_DYNAMIC	process.c	186
+PT_INTERP	process.c	187
+PT_LOAD	process.c	185
+PT_NOTE	process.c	188
+PT_NULL	process.c	184
+PT_PHDR	process.c	190
+PT_SHLIB	process.c	189
+PT_STACK	process.c	191
+SEL_CNT	gdt.h	11
+SEL_TSS	gdt.h	10
+SEL_UCSEG	gdt.h	8
+SEL_UDSEG	gdt.h	9
+USERPROG_EXCEPTION_H	exception.h	2
+USERPROG_GDT_H	gdt.h	2
+USERPROG_PAGEDIR_H	pagedir.h	2
+USERPROG_PROCESS_H	process.h	2
+USERPROG_SYSCALL_H	syscall.h	2
+USERPROG_TSS_H	tss.h	2
+active_pd	pagedir.c	/^active_pd (void) $/
+back_link	tss.c	53
+bitmap	tss.c	72
+cr3	tss.c	60
+cs	tss.c	66
+ds	tss.c	68
+e_ehsize	process.c	160
+e_entry	process.c	156
+e_flags	process.c	159
+e_ident	process.c	152
+e_machine	process.c	154
+e_phentsize	process.c	161
+e_phnum	process.c	162
+e_phoff	process.c	157
+e_shentsize	process.c	163
+e_shnum	process.c	164
+e_shoff	process.c	158
+e_shstrndx	process.c	165
+e_type	process.c	153
+e_version	process.c	155
+eax	tss.c	63
+ebp	tss.c	64
+ebx	tss.c	63
+ecx	tss.c	63
+edi	tss.c	64
+edx	tss.c	63
+eflags	tss.c	62
+eip	tss.c	/^    void (*eip) (void);$/
+es	tss.c	65
+esi	tss.c	64
+esp	tss.c	64
+esp0	tss.c	54
+esp1	tss.c	56
+esp2	tss.c	58
+exception_init	exception.c	/^exception_init (void) $/
+exception_print_stats	exception.c	/^exception_print_stats (void) $/
+fs	tss.c	69
+gdt	gdt.c	25
+gdt_init	gdt.c	/^gdt_init (void)$/
+gs	tss.c	70
+install_page	process.c	/^install_page (void *upage, void *kpage, bool writa/
+invalidate_pagedir	pagedir.c	/^invalidate_pagedir (uint32_t *pd) $/
+kill	exception.c	/^kill (struct intr_frame *f) $/
+ldt	tss.c	71
+load	process.c	/^load (const char *file_name, void (**eip) (void), /
+load_segment	process.c	/^load_segment (struct file *file, off_t ofs, uint8_/
+lookup_page	pagedir.c	/^lookup_page (uint32_t *pd, const void *vaddr, bool/
+make_code_desc	gdt.c	/^make_code_desc (int dpl)$/
+make_data_desc	gdt.c	/^make_data_desc (int dpl)$/
+make_gdtr_operand	gdt.c	/^make_gdtr_operand (uint16_t limit, void *base)$/
+make_seg_desc	gdt.c	/^make_seg_desc (uint32_t base,$/
+make_tss_desc	gdt.c	/^make_tss_desc (void *laddr)$/
+p_align	process.c	180
+p_filesz	process.c	177
+p_flags	process.c	179
+p_memsz	process.c	178
+p_offset	process.c	174
+p_paddr	process.c	176
+p_type	process.c	173
+p_vaddr	process.c	175
+page_fault	exception.c	/^page_fault (struct intr_frame *f) $/
+page_fault_cnt	exception.c	9
+pagedir_activate	pagedir.c	/^pagedir_activate (uint32_t *pd) $/
+pagedir_clear_page	pagedir.c	/^pagedir_clear_page (uint32_t *pd, void *upage) $/
+pagedir_create	pagedir.c	/^pagedir_create (void) $/
+pagedir_destroy	pagedir.c	/^pagedir_destroy (uint32_t *pd) $/
+pagedir_get_page	pagedir.c	/^pagedir_get_page (uint32_t *pd, const void *uaddr)/
+pagedir_is_accessed	pagedir.c	/^pagedir_is_accessed (uint32_t *pd, const void *vpa/
+pagedir_is_dirty	pagedir.c	/^pagedir_is_dirty (uint32_t *pd, const void *vpage)/
+pagedir_set_accessed	pagedir.c	/^pagedir_set_accessed (uint32_t *pd, const void *vp/
+pagedir_set_dirty	pagedir.c	/^pagedir_set_dirty (uint32_t *pd, const void *vpage/
+pagedir_set_page	pagedir.c	/^pagedir_set_page (uint32_t *pd, void *upage, void /
+process_activate	process.c	/^process_activate (void)$/
+process_execute	process.c	/^process_execute (const char *file_name) $/
+process_exit	process.c	/^process_exit (void)$/
+process_wait	process.c	/^process_wait (tid_t child_tid UNUSED) $/
+seg_class	gdt.c	57
+seg_granularity	gdt.c	64
+setup_stack	process.c	/^setup_stack (void **esp) $/
+ss	tss.c	67
+ss0	tss.c	55
+ss1	tss.c	57
+ss2	tss.c	59
+start_process	process.c	/^start_process (void *file_name_)$/
+syscall_handler	syscall.c	/^syscall_handler (struct intr_frame *f UNUSED) $/
+syscall_init	syscall.c	/^syscall_init (void) $/
+trace	tss.c	72
+tss	tss.c	51
+tss	tss.c	76
+tss_get	tss.c	/^tss_get (void) $/
+tss_init	tss.c	/^tss_init (void) $/
+tss_update	tss.c	/^tss_update (void) $/
+validate_segment	process.c	/^validate_segment (const struct Elf32_Phdr *phdr, s/
