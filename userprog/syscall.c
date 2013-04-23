@@ -269,6 +269,22 @@ syscall_handler (struct intr_frame *f UNUSED)
 	}
         break;
 
+      
+      case SYS_CHDIR:		       /* Change the current directory. */
+        break;
+
+      case SYS_MKDIR:                  /* Create a directory. */
+        break;
+
+      case SYS_READDIR:                /* Reads a directory entry. */
+        break;
+
+      case SYS_ISDIR:                  /* Tests if a fd represents a directory. */
+        break;
+
+      case SYS_INUMBER:		       /* Returns the inode number for a fd. */
+        break;
+
       default:
         // TODO
 	;

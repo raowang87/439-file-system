@@ -1,0 +1,372 @@
+$__is˘y≥	cscope.out	/^	$__is˘y≥_f$/
+$__°rc•n_	cscope.out	/^	$__°rc•n_c2$/
+$__°r•n_	cscope.out	/^	$__°r•n_c2$/
+$__°Ωbrk_	cscope.out	/^	$__°Ωbrk_c3$/
+$__±hªad_uƒegi	cscope.out	/^	$__±hªad_uƒegi°î_ˇn˚l$/
+$__±hªad_uƒegi°î	cscope.out	/^	$__±hªad_uƒegi°î_ˇn˚l_ª°‹e$/
+$dú	cscope.out	/^	$dú_¸óã$/
+DEFINES	Make.vars	3
+ELSE	cscope.out	/^ELSE$/
+FILESYS_DIRECTORY_H	directory.h	2
+FILESYS_FILESYS_H	filesys.h	2
+FILESYS_FILE_H	file.h	2
+FILESYS_FREE_MAP_H	free-map.h	2
+FILESYS_FSUTIL_H	fsutil.h	2
+FILESYS_INODE_H	inode.h	2
+FILESYS_OFF_T_H	off_t.h	2
+FREE_MAP_SECTOR	filesys.h	8
+INODE_MAGIC	inode.c	11
+LLL_LOCK_INITIALIZER	cscope.out	32231
+LLL_LOCK_INITIALIZER	cscope.out	38615
+LLL_LOCK_INITIALIZER	cscope.out	38729
+NAME	cscope.out	38545
+NAME	cscope.out	38563
+NAME	cscope.out	38581
+NAME	cscope.out	38599
+NAME	cscope.out	38649
+NAME	cscope.out	38691
+NAME	cscope.out	38711
+NAME	cscope.out	38763
+NAME	cscope.out	/^NAME$/
+NAME_MAX	directory.h	12
+PROTd	off_t.h	13
+PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP	cscope.out	51317
+ROOT_DIR_SECTOR	filesys.h	9
+_FORCE_INLINES	cscope.out	/^_FORCE_INLINES$/
+__	cscope.out	8649
+__	cscope.out	20347
+__BYTE_ORDER	cscope.out	32869
+__BYTE_ORDER	cscope.out	51295
+__GNUC_PREREQ	cscope.out	/^__GNUC_PREREQ$/
+__LT_SPINLOCK_INIT	cscope.out	38657
+__NTH	cscope.out	/^__NTH$/
+__NTH	cscope.out	/^__NTH$/
+__THROW	cscope.out	15655
+__THROW	cscope.out	44403
+__THROW	cscope.out	44487
+__USE_EXTERN_INLINES	cscope.out	/^__USE_EXTERN_INLINES$/
+__USE_GNU	cscope.out	/^__USE_GNU$/
+__WCHAR_MAX__	cscope.out	/^__WCHAR_MAX__$/
+__WORDSIZE	cscope.out	51281
+__c	cscope.out	19147
+__c	cscope.out	19731
+__c	cscope.out	19747
+__c	cscope.out	19789
+__c	cscope.out	19831
+__c	cscope.out	19901
+__c	cscope.out	20209
+__c	cscope.out	20267
+__de	cscope.out	20787
+__do_	cscope.out	40467
+__do_	cscope.out	52407
+__do_	cscope.out	52439
+__do_	cscope.out	52685
+__do_	cscope.out	52767
+__libc_±f	cscope.out	/^	`__libc_±f_ˇŒ$/
+__mask_was_ßve	cscope.out	52365
+__mm≠6	cscope.out	/^__mm≠64$/
+__nŸ_f	cscope.out	52803
+__s	cscope.out	19371
+__s	cscope.out	23745
+__s	cscope.out	24205
+__sched_˝uco	cscope.out	/^	`__sched_˝ucou¡$/
+__sˇ	cscope.out	20215
+__sˇ	cscope.out	20221
+__sˇ	cscope.out	20227
+__sˇ	cscope.out	20233
+__sˇ	cscope.out	20239
+__sˇ	cscope.out	20245
+__sˇ	cscope.out	20251
+__sˇ	cscope.out	20277
+__sˇ	cscope.out	20287
+__sˇ	cscope.out	20297
+__sˇ	cscope.out	20307
+__sˇ	cscope.out	20317
+__sˇ	cscope.out	20327
+__sˇ	cscope.out	20337
+__u	cscope.out	19139
+__u	cscope.out	19165
+__u	cscope.out	19179
+__u	cscope.out	19193
+__u	cscope.out	19207
+__u	cscope.out	19229
+__u	cscope.out	19243
+__u	cscope.out	19257
+__u	cscope.out	19279
+__u	cscope.out	19293
+__u	cscope.out	19307
+__u	cscope.out	19329
+__u	cscope.out	19343
+__u	cscope.out	19357
+__u	cscope.out	19735
+__u	cscope.out	19753
+__u	cscope.out	19767
+__u	cscope.out	19781
+__u	cscope.out	19795
+__u	cscope.out	19809
+__u	cscope.out	19823
+__u	cscope.out	19837
+__u	cscope.out	19851
+__u	cscope.out	19865
+__u	cscope.out	19879
+__u	cscope.out	19893
+__u	cscope.out	19907
+__u	cscope.out	19921
+__u	cscope.out	19935
+__u	cscope.out	19941
+__u	cscope.out	20255
+__u	cscope.out	20637
+__u	cscope.out	20669
+__u	cscope.out	20697
+__u	cscope.out	20717
+__u	cscope.out	20739
+__u	cscope.out	20753
+__u	cscope.out	20773
+__uc	cscope.out	19215
+__uc	cscope.out	19315
+__uc	cscope.out	19727
+__uc	cscope.out	20633
+__uc	cscope.out	20649
+__uc	cscope.out	20677
+__uc	cscope.out	20705
+__uc	cscope.out	20761
+__ui	cscope.out	19159
+__ui	cscope.out	19173
+__ui	cscope.out	19187
+__ui	cscope.out	19223
+__ui	cscope.out	19237
+__ui	cscope.out	19251
+__ui	cscope.out	19273
+__ui	cscope.out	19287
+__ui	cscope.out	19301
+__ui	cscope.out	19323
+__ui	cscope.out	19337
+__ui	cscope.out	19351
+__ui	cscope.out	19365
+__ui	cscope.out	19717
+__ui	cscope.out	19803
+__ui	cscope.out	19817
+__ui	cscope.out	19845
+__ui	cscope.out	19873
+__ui	cscope.out	19915
+__ui	cscope.out	19929
+__ui	cscope.out	20623
+__ui	cscope.out	20683
+__ui	cscope.out	20691
+__ui	cscope.out	20711
+__ui	cscope.out	20733
+__ui	cscope.out	20767
+__ui	cscope.out	20781
+__usi	cscope.out	19201
+__usi	cscope.out	19265
+__usi	cscope.out	19723
+__usi	cscope.out	19761
+__usi	cscope.out	19775
+__usi	cscope.out	19859
+__usi	cscope.out	19887
+__usi	cscope.out	20629
+__usi	cscope.out	20655
+__usi	cscope.out	20663
+__usi	cscope.out	20725
+__usi	cscope.out	20747
+__°rdu	cscope.out	/^	`__°rdup$/
+__°∫d	cscope.out	/^	`__°∫dup$/
+__£l	cscope.out	32323
+__∑	cscope.out	52373
+__ªj	cscope.out	24691
+__ªje	cscope.out	24745
+__ªs	cscope.out	23297
+__ªs	cscope.out	23301
+__ªs	cscope.out	23757
+__ªs	cscope.out	32319
+__ªt	cscope.out	24707
+__ªt	cscope.out	24729
+__ªt	cscope.out	24763
+__˝lu•l	cscope.out	/^__˝lu•lus$/
+__˛‰a	cscope.out	/^	`__˛‰ame$/
+__ˇn˚l	cscope.out	52403
+__ˇn˚l	cscope.out	52435
+__ˇn˚l	cscope.out	52797
+__ˇn˚l_	cscope.out	52411
+__ˇn˚l_	cscope.out	52443
+__ˇn˚l_b	cscope.out	52787
+__ˇn˚l_b	cscope.out	52831
+__ˇn˚l_b	cscope.out	52837
+__ˇn˚l_jmp_b	cscope.out	52361
+__ˇn˚l_jmp_b	cscope.out	52369
+byte_to_sector	inode.c	/^byte_to_sector (const struct inode *inode, off_t p/
+bytes_to_sectors	inode.c	/^bytes_to_sectors (off_t size)$/
+data	inode.c	41
+deny_write	file.c	11
+deny_write_cnt	inode.c	40
+dir	directory.c	10
+dir_add	directory.c	/^dir_add (struct dir *dir, const char *name, block_/
+dir_close	directory.c	/^dir_close (struct dir *dir) $/
+dir_create	directory.c	/^dir_create (block_sector_t sector, size_t entry_cn/
+dir_entry	directory.c	17
+dir_get_inode	directory.c	/^dir_get_inode (struct dir *dir) $/
+dir_lookup	directory.c	/^dir_lookup (const struct dir *dir, const char *nam/
+dir_open	directory.c	/^dir_open (struct inode *inode) $/
+dir_open_root	directory.c	/^dir_open_root (void)$/
+dir_readdir	directory.c	/^dir_readdir (struct dir *dir, char name[NAME_MAX +/
+dir_remove	directory.c	/^dir_remove (struct dir *dir, const char *name) $/
+dir_reopen	directory.c	/^dir_reopen (struct dir *dir) $/
+do_format	filesys.c	/^do_format (void)$/
+elem	inode.c	36
+file	file.c	7
+file_allow_write	file.c	/^file_allow_write (struct file *file) $/
+file_close	file.c	/^file_close (struct file *file) $/
+file_deny_write	file.c	/^file_deny_write (struct file *file) $/
+file_get_inode	file.c	/^file_get_inode (struct file *file) $/
+file_length	file.c	/^file_length (struct file *file) $/
+file_open	file.c	/^file_open (struct inode *inode) $/
+file_read	file.c	/^file_read (struct file *file, void *buffer, off_t /
+file_read_at	file.c	/^file_read_at (struct file *file, void *buffer, off/
+file_reopen	file.c	/^file_reopen (struct file *file) $/
+file_seek	file.c	/^file_seek (struct file *file, off_t new_pos)$/
+file_tell	file.c	/^file_tell (struct file *file) $/
+file_write	file.c	/^file_write (struct file *file, const void *buffer,/
+file_write_at	file.c	/^file_write_at (struct file *file, const void *buff/
+filesys_create	filesys.c	/^filesys_create (const char *name, off_t initial_si/
+filesys_done	filesys.c	/^filesys_done (void) $/
+filesys_init	filesys.c	/^filesys_init (bool format) $/
+filesys_open	filesys.c	/^filesys_open (const char *name)$/
+filesys_remove	filesys.c	/^filesys_remove (const char *name) $/
+free_map	free-map.c	9
+free_map_allocate	free-map.c	/^free_map_allocate (size_t cnt, block_sector_t *sec/
+free_map_close	free-map.c	/^free_map_close (void) $/
+free_map_create	free-map.c	/^free_map_create (void) $/
+free_map_file	free-map.c	8
+free_map_init	free-map.c	/^free_map_init (void) $/
+free_map_open	free-map.c	/^free_map_open (void) $/
+free_map_release	free-map.c	/^free_map_release (block_sector_t sector, size_t cn/
+fs_device	filesys.c	11
+fs_device	filesys.h	12
+fsutil_append	fsutil.c	/^fsutil_append (char **argv)$/
+fsutil_cat	fsutil.c	/^fsutil_cat (char **argv)$/
+fsutil_extract	fsutil.c	/^fsutil_extract (char **argv UNUSED) $/
+fsutil_ls	fsutil.c	/^fsutil_ls (char **argv UNUSED) $/
+fsutil_rm	fsutil.c	/^fsutil_rm (char **argv) $/
+i	cscope.out	/^1237 i‡($/
+i	cscope.out	/^55 i‡(($/
+i	cscope.out	/^495 i‡($/
+i	cscope.out	/^497 } i‡($/
+in_use	directory.c	21
+inode	directory.c	12
+inode	file.c	9
+inode	inode.c	34
+inode_allow_write	inode.c	/^inode_allow_write (struct inode *inode) $/
+inode_close	inode.c	/^inode_close (struct inode *inode) $/
+inode_create	inode.c	/^inode_create (block_sector_t sector, off_t length)/
+inode_deny_write	inode.c	/^inode_deny_write (struct inode *inode) $/
+inode_disk	inode.c	15
+inode_get_inumber	inode.c	/^inode_get_inumber (const struct inode *inode)$/
+inode_init	inode.c	/^inode_init (void) $/
+inode_length	inode.c	/^inode_length (const struct inode *inode)$/
+inode_open	inode.c	/^inode_open (block_sector_t sector)$/
+inode_read_at	inode.c	/^inode_read_at (struct inode *inode, void *buffer_,/
+inode_remove	inode.c	/^inode_remove (struct inode *inode) $/
+inode_reopen	inode.c	/^inode_reopen (struct inode *inode)$/
+inode_sector	directory.c	19
+inode_write_at	inode.c	/^inode_write_at (struct inode *inode, const void *b/
+is_directory	inode.c	19
+length	inode.c	20
+lookup	directory.c	/^lookup (const struct dir *dir, const char *name,$/
+mPTHREAD_CANCEL_DEFERRED	cscope.out	51449
+mPTHREAD_CANCEL_ENABLE	cscope.out	51425
+mPTHREAD_INHERIT_SCHED	cscope.out	51325
+mPTHREAD_PROCESS_PRIVATE	cscope.out	51373
+mPTHREAD_RWLOCK_DEFAULT_NP	cscope.out	51263
+mPTHREAD_RWLOCK_PREFER_READER_NP	cscope.out	51251
+mPTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP	cscope.out	51259
+mPTHREAD_RWLOCK_PREFER_WRITER_NP	cscope.out	51255
+mPTHREAD_SCOPE_SYSTEM	cscope.out	51349
+m__	cscope.out	8693
+m__cd	cscope.out	31345
+m__cd	cscope.out	31351
+m__comböe	cscope.out	31361
+m__d©	cscope.out	31357
+m__pos	cscope.out	31237
+m__pos	cscope.out	31253
+m__v	cscope.out	41405
+m__w_c‹edum	cscope.out	26653
+m__w_c‹edum	cscope.out	26671
+m__w_ãrmsi	cscope.out	26675
+m__w_°	cscope.out	26707
+m__w_°›s	cscope.out	26693
+m__w_ªtcod	cscope.out	26657
+m__waô_	cscope.out	26711
+m__waô_ãrm	cscope.out	26679
+m__°	cscope.out	31243
+m__°	cscope.out	31259
+m__¨	cscope.out	51411
+m__¥e	cscope.out	51421
+m__ˇn	cscope.out	51415
+magic	inode.c	21
+mc⁄	cscope.out	46229
+me	cscope.out	/^«me$/
+me°	cscope.out	46221
+mjô	cscope.out	46255
+mjô	cscope.out	46267
+mmaxî	cscope.out	46217
+mmodes	cscope.out	46205
+moff£	cscope.out	46209
+mpos	cscope.out	45
+mqu	cscope.out	8839
+mqu	cscope.out	8877
+mshi	cscope.out	46259
+mt	cscope.out	46237
+mtick	cscope.out	46247
+mtime	cscope.out	46243
+mè	cscope.out	46283
+mîr	cscope.out	46275
+mö_	cscope.out	67
+möod	cscope.out	39
+möode	cscope.out	55
+m°a	cscope.out	46263
+m°b	cscope.out	46279
+m°©	cscope.out	46225
+m¥ecis	cscope.out	46233
+mµs‰	cscope.out	46251
+mª	cscope.out	8827
+mª	cscope.out	8843
+mª	cscope.out	8881
+m«m	cscope.out	59
+m‰e	cscope.out	46213
+mˇl	cscope.out	46271
+name	directory.c	20
+off_t	off_t.h	9
+open_cnt	inode.c	38
+open_inodes	inode.c	60
+ow√	cscope.out	32297
+pos	directory.c	13
+pos	file.c	10
+removed	inode.c	39
+routö	cscope.out	52793
+sector	inode.c	37
+sectors	inode.c	18
+start	inode.c	17
+t	cscope.out	32305
+t_G_ic⁄v_	cscope.out	31365
+t_G_Âos64_	cscope.out	31263
+t_G_Âos_	cscope.out	31247
+t_IO_lock_t	cscope.out	32225
+t__libc_key_t	cscope.out	38529
+t__libc_lock_t	cscope.out	38471
+t__libc_lock_t	cscope.out	38511
+t__libc_lock_ªcursive_	cscope.out	38467
+t__libc_lock_ªcursive_	cscope.out	38481
+t__libc_lock_ªcursive_	cscope.out	38517
+t__libc_rwlock_t	cscope.out	38499
+t__libc_rwlock_t	cscope.out	38505
+t__libc_rwlock_t	cscope.out	38523
+t__loˇÀ	cscope.out	31147
+t__sig_©omic_	cscope.out	41395
+t__sig£t_	cscope.out	41411
+t__πld_lock_ªcursive	cscope.out	38489
+tdiv_t	cscope.out	8831
+tldiv_t	cscope.out	8847
+tloˇÀ	cscope.out	31153
+tŒdiv_	cscope.out	8885
+unused	inode.c	22
+x8000	cscope.out	/^ 0x8000$/

@@ -83,3 +83,10 @@ free_map_create (void)
   if (!bitmap_write (free_map, free_map_file))
     PANIC ("can't write free map");
 }
+
+/* MODIFIED Return number of bits that are 0 */
+size_t
+free_map_unused (void)
+{
+  return bitmap_count (free_map, 0, block_size (fs_device), false);
+}
