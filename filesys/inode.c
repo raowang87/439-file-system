@@ -10,10 +10,10 @@
 /* Identifies an inode. */
 #define INODE_MAGIC 0x494e4f44
 #define DIRECT_BLOCK 124
+#define MAX_BLOCK_NUMBER 16637 // 1 + 124 + 2 ** 7 + 2 ** 14
 
-/*MODIFIED: return the total number of sectors needed to save SECTORS's data*/
+/* MODIFIED: return the total number of sectors needed to save SECTORS's data */
 size_t compute_total_sectors (size_t sectors);
-
 
 /* On-disk inode.
    Must be exactly BLOCK_SECTOR_SIZE bytes long. */
@@ -54,14 +54,42 @@ struct inode
 
 /* Returns the block device sector that contains byte offset POS
    within INODE.
+
+   MODIFIED traverse
+
    Returns -1 if INODE does not contain data for a byte at offset
    POS. */
 static block_sector_t
 byte_to_sector (const struct inode *inode, off_t pos) 
 {
   ASSERT (inode != NULL);
+  block_sector_t index, first_ib_index, second_ib_index;
+  struct indirect_block *first_ib, *second_ib;
+
   if (pos < inode->data.length)
-    return inode->data.start + pos / BLOCK_SECTOR_SIZE;
+  {
+    index = pos / BLOCK_SECTOR_SIZE;
+
+    // direct block
+    if (index < DIRECT_BLOCK)
+    {
+      return inode->data.sectors[index];
+    }
+    else
+    {
+      // number of entry in first level ib
+      first_ib_index = (index - DIRECT_BLOCK) / 128;
+      second_ib_index = (index - DIRECT_BLOCK) % 128;
+
+      // read first level ib
+      block_read (fs_device, inode->data.ib, first_ib);
+
+      // read second level ib
+      block_read (fs_device, first_ib->sectors[first_ib_index], second_ib);
+
+      return second_ib->sectors[second_ib_index];
+    }
+  }
   else
     return -1;
 }
@@ -86,6 +114,7 @@ bool
 inode_create (block_sector_t sector, off_t length)
 {
   struct inode_disk *disk_inode = NULL;
+  block_sector_t total_sectors;
   bool success = false;
 
   ASSERT (length >= 0);
@@ -99,6 +128,12 @@ inode_create (block_sector_t sector, off_t length)
     {
       size_t sectors = bytes_to_sectors (length);
       total_sectors = compute_total_sectors (sectors);
+      if (total_sectors > MAX_BLOCK_NUMBER)
+      {
+        // file too large, counting indirect blocks
+        return false;
+      }
+
       disk_inode->length = length;
       disk_inode->magic = INODE_MAGIC;
 
@@ -106,14 +141,9 @@ inode_create (block_sector_t sector, off_t length)
       if (free_map_unused () >= total_sectors + 1) 
         {
           block_write (fs_device, sector, disk_inode);
-          if (sectors > 0) 
-            {
-              static char zeros[BLOCK_SECTOR_SIZE];
-              size_t i;
-              
-              for (i = 0; i < sectors; i++) 
-                block_write (fs_device, disk_inode->start + i, zeros);
-            }
+
+	  write_sectors_to_disk (total_sectors, disk_inode);
+          
           success = true; 
         } 
       free (disk_inode);
@@ -179,6 +209,9 @@ inode_get_inumber (const struct inode *inode)
 void
 inode_close (struct inode *inode) 
 {
+  block_sector_t index, first_ib_index, second_ib_index;
+  struct indirect_block *first_ib, *second_ib;
+
   /* Ignore null pointer. */
   if (inode == NULL)
     return;
@@ -192,9 +225,31 @@ inode_close (struct inode *inode)
       /* Deallocate blocks if removed. */
       if (inode->removed) 
         {
+
+	    index = inode->data.length / BLOCK_SECTOR_SIZE;
+
+	    // direct block
+	    if (index < DIRECT_BLOCK)
+	    {
+	      return inode->data.sectors[index];
+	    }
+	    else
+	    {
+	      // number of entry in first level ib
+	      first_ib_index = (index - DIRECT_BLOCK) / 128;
+	      second_ib_index = (index - DIRECT_BLOCK) % 128;
+
+	      // read first level ib
+	      block_read (fs_device, inode->data.ib, first_ib);
+
+	      // read second level ib
+	      block_read (fs_device, first_ib->sectors[first_ib_index], second_ib);
+
+	      return second_ib->sectors[second_ib_index];
+	    }
+	  
+	  // free inode
           free_map_release (inode->sector, 1);
-          free_map_release (inode->data.start,
-                            bytes_to_sectors (inode->data.length)); 
         }
 
       free (inode); 
@@ -375,44 +430,54 @@ compute_total_sectors (size_t sectors)
   {
     int second_level = ( sectors - DIRECT_BLOCK ) / 128;
     int indirect_sectors = sectors - DIRECT_BLOCK;
-    return indirect_sectors + second_level + 1;
+    // Direct data + Indirect data + indirect IB (1st level: 1, 2nd level: second_level)
+    return indirect_sectors + second_level + 1 + DIRECT_BLOCK;
   }
 }
 
+/* Create secotrs in disk with 2 level indirected block. */
 void
-write_sectors_to_disk( block_sector_t total_sectors, inode_disk *inode )
+write_sectors_to_disk( block_sector_t total_sectors, struct inode_disk *disk_inode )
 {
   block_sector_t position;
-  int i;
-    for( i = 0; i < total_sectors && i < DIRECT_BLOCK; i++ )
-    {
-       free_map_allocate(1, &position );
-       inode->sectors[i] = position;
-    }
+  int i, k;
+
+  // data in direct data blocks
+  for( i = 0; i < total_sectors && i < DIRECT_BLOCK; i++ )
+  {
+    free_map_allocate(1, &position );
+    disk_inode->sectors[i] = position;
+  }
+
+  // data in IB
   if( i < total_sectors )
   {
     // get the first level IB's sector position and save it into inode->ib
     struct indirect_block *first_level = calloc(1, sizeof (struct indirect_block));
     free_map_allocate(1, &position );
-    inode->ib = position;
+    disk_inode->ib = position;
     i++;
 
     // create the first_level IB
     int ib_index = 0;
     while ( i < total_sectors )
     {
+      ASSERT (ib_index < 128);
+
       struct indirect_block *second_level = calloc(1, sizeof (struct indirect_block));
       free_map_allocate(1, &position );
       first_level->sectors[ib_index] = position;
       i++;
    
       // create the second_level IB
-      for( int k = 0; k < 128 && i + k < total_sectors; k++ )
+      for( k = 0; (k < 128) && (i + k < total_sectors); k++ )
       {
         free_map_allocate(1, &position );
         second_level->sectors[k] = position;
       } 
+
       i = i + k;
+
       //write the second_level IB to disk
       block_write (fs_device, first_level->sectors[ib_index], second_level);
       free( second_level );
@@ -420,7 +485,7 @@ write_sectors_to_disk( block_sector_t total_sectors, inode_disk *inode )
     }
 
     //write the first_level IB to disk
-    block_write (fs_device, inode->ib, first_level);
+    block_write (fs_device, disk_inode->ib, first_level);
     free( first_level );
   }
 }

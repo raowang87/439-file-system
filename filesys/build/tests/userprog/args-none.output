@@ -1,5 +1,5 @@
 Copying tests/userprog/args-none to scratch partition...
-qemu -hda /tmp/LEUSG5l3ly.dsk -m 4 -net none -nographic -monitor null
+qemu -hda /tmp/xuBn8amThX.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
 Loading.........
 Kernel command line: -q -f extract run args-none
@@ -14,23 +14,16 @@ hda3: 100 sectors (50 kB), Pintos scratch (22)
 filesys: using hda2
 scratch: using hda3
 Formatting file system...done.
-Boot complete.
-Extracting ustar archive from scratch device into file system...
-Putting 'args-none' into the file system...
-Erasing ustar archive...
-Executing 'args-none':
-(args) begin
-(args) argc = 1
-(args) argv[0] = 'args-none'
-(args) argv[1] = null
-(args) end
-args-none: exit(0)
-Execution of 'args-none' complete.
-Timer: 259 ticks
-Thread: 0 idle ticks, 258 kernel ticks, 1 user ticks
-hda2 (filesys): 63 reads, 204 writes
-hda3 (scratch): 99 reads, 2 writes
-Console: 943 characters output
+Kernel PANIC at ../../filesys/free-map.c:60 in free_map_open(): can't read free map
+Call stack: 0xc0028852 0xc002ca2e 0xc002c895 0xc002087e.
+The `backtrace' program can make call stacks useful.
+Read "Backtraces" in the "Debugging Tools" chapter
+of the Pintos documentation for more information.
+Timer: 55 ticks
+Thread: 0 idle ticks, 55 kernel ticks, 0 user ticks
+hda2 (filesys): 2 reads, 4 writes
+hda3 (scratch): 0 reads, 0 writes
+Console: 915 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

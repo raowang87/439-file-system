@@ -1,16 +1,16 @@
-Copying tests/userprog/args-single to scratch partition...
-qemu -hda /tmp/ZZEk8PKowK.dsk -m 4 -net none -nographic -monitor null
+Copying tests/userprog/sc-bad-arg to scratch partition...
+qemu -hda /tmp/F4Dc5mmryU.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
 Loading.........
-Kernel command line: -q -f extract run 'args-single onearg'
+Kernel command line: -q -f extract run sc-bad-arg
 Pintos booting with 4,096 kB RAM...
 383 pages available in kernel pool.
 383 pages available in user pool.
-Calibrating timer...  214,220,800 loops/s.
+Calibrating timer...  209,510,400 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
 hda1: 147 sectors (73 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
-hda3: 100 sectors (50 kB), Pintos scratch (22)
+hda3: 101 sectors (50 kB), Pintos scratch (22)
 filesys: using hda2
 scratch: using hda3
 Formatting file system...done.
@@ -19,11 +19,11 @@ Call stack: 0xc0028852 0xc002ca2e 0xc002c895 0xc002087e.
 The `backtrace' program can make call stacks useful.
 Read "Backtraces" in the "Debugging Tools" chapter
 of the Pintos documentation for more information.
-Timer: 63 ticks
-Thread: 0 idle ticks, 63 kernel ticks, 0 user ticks
+Timer: 55 ticks
+Thread: 0 idle ticks, 55 kernel ticks, 0 user ticks
 hda2 (filesys): 2 reads, 4 writes
 hda3 (scratch): 0 reads, 0 writes
-Console: 926 characters output
+Console: 916 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

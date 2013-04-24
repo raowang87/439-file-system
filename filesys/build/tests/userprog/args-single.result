@@ -1,1 +1,8 @@
-PASS
+FAIL
+Kernel panic in run: PANIC at ../../filesys/free-map.c:60 in free_map_open(): can't read free map
+Call stack: 0xc0028852 0xc002ca2e 0xc002c895 0xc002087e
+Translation of call stack:
+0xc0028852: debug_panic (.../../lib/kernel/debug.c:38)
+0xc002ca2e: free_map_open (.../../filesys/free-map.c:61)
+0xc002c895: filesys_init (..../../filesys/filesys.c:31)
+0xc002087e: main (.../../../threads/init.c:130)
