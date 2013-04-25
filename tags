@@ -1,0 +1,653 @@
+$	Makefile.userprog	/^$(PROGS): CPPFLAGS += -I$(SRCDIR)\/lib\/user -I.$/
+$__LDBL_REDIR1_DECL	cscope.out	/^	$__LDBL_REDIR1_DECL$/
+$__LDBL_REDIR_DECL	cscope.out	/^	$__LDBL_REDIR_DECL$/
+$__USING_NAMESPACE_STD	cscope.out	/^	$__USING_NAMESPACE_STD$/
+$__is˘y≥	cscope.out	/^	$__is˘y≥_f$/
+$__°rc•n_	cscope.out	/^	$__°rc•n_c2$/
+$__°r•n_	cscope.out	/^	$__°r•n_c2$/
+$__°Ωbrk_	cscope.out	/^	$__°Ωbrk_c3$/
+$__±hªad_uƒegi	cscope.out	/^	$__±hªad_uƒegi°î_ˇn˚l$/
+$__±hªad_uƒegi°î	cscope.out	/^	$__±hªad_uƒegi°î_ˇn˚l_ª°‹e$/
+$__›í	cscope.out	/^	$__›í©_2$/
+$block_ty≥_«	cscope.out	/^	$block_ty≥_«me$/
+$debug_backå	cscope.out	/^	$debug_backåa˚$/
+$debug_backåa˚	cscope.out	/^	$debug_backåa˚_Æl$/
+$divl	cscope.out	/^	$divl$/
+$gnu_dev_m	cscope.out	/^	$gnu_dev_mö‹$/
+$gë_fûe_no	cscope.out	/^	$gë_fûe_node$/
+$is_u£r_vadd	cscope.out	/^	$is_u£r_vaddr$/
+$isxdig	cscope.out	/^	$isxdigô$/
+$is•	cscope.out	/^	$is•a˚$/
+$i•u	cscope.out	/^	$i•un˘$/
+$keybﬂrd_	cscope.out	/^	$keybﬂrd_öãºu±$/
+$ma	cscope.out	/^	$maö$/
+$pd_no	cscope.out	/^	$pd_no$/
+$pde_	cscope.out	/^	$pde_¸óã$/
+$pde_gë	cscope.out	/^	$pde_gë_±$/
+$pg_no	cscope.out	/^	$pg_no$/
+$pg_round_down	cscope.out	/^	$pg_round_down$/
+$pg_round_up	cscope.out	/^	$pg_round_up$/
+$run_	cscope.out	/^	$run_ã°$/
+$sysˇ	cscope.out	/^	$sysˇŒ_öô$/
+$vmsg	cscope.out	/^	$vmsg$/
+$vÆid©e_£	cscope.out	/^	$vÆid©e_£gmít$/
+$ã°_	cscope.out	/^	$ã°_maö$/
+$ñem_id	cscope.out	/^	$ñem_idx$/
+$öô_	cscope.out	/^	$öô_pﬁl$/
+$öô_g	cscope.out	/^	$öô_gømm¨$/
+$£ma	cscope.out	/^	$£ma_öô$/
+$•awn_ch	cscope.out	/^	$•awn_chûd$/
+$±e_gë_	cscope.out	/^	$±e_gë_∑ge$/
+$¥o˚ss_vm_ª	cscope.out	/^	$¥o˚ss_vm_ªadv$/
+$∑r£_c⁄	cscope.out	/^	$∑r£_c⁄vîsi⁄$/
+$ªad	cscope.out	/^	$ªadv$/
+$¸	cscope.out	/^	$¸y±$/
+BUILD_SUBDIRS	Makefile	/^BUILD_SUBDIRS = threads userprog vm filesys$/
+CHARCLASS_NAME_MAX	cscope.out	/^CHARCLASS_NAME_MAX$/
+CLAIM	LICENSE	22
+CLEAN_SUBDIRS	Makefile	/^CLEAN_SUBDIRS = $(BUILD_SUBDIRS) examples utils$/
+CONTRACT	LICENSE	23
+DIRECT_BLOCK	cscope.out	16231
+DIRECT_BLOCK	cscope.out	16267
+DIRS	Makefile.kernel	7
+ELSE	cscope.out	/^ELSE$/
+FROM	LICENSE	23
+GRADER	Makefile	/^GRADER := tw7877$/
+IMPLIED	LICENSE	19
+ITIMER_REAL	cscope.out	90619
+KIND	LICENSE	18
+LAB1_NAME	Makefile	/^LAB1_NAME := threads$/
+LAB2_NAME	Makefile	/^LAB2_NAME := user$/
+LAB3_NAME	Makefile	/^LAB3_NAME := vm$/
+LAB4_NAME	Makefile	/^LAB4_NAME := fs$/
+LIABILITY	LICENSE	22
+LLL_LOCK_INITIALIZER	cscope.out	140739
+LLL_LOCK_INITIALIZER	cscope.out	154885
+LLL_LOCK_INITIALIZER	cscope.out	154999
+LLL_LOCK_INITIALIZER	cscope.out	155045
+MERCHANTABILITY	LICENSE	20
+NAME	cscope.out	154815
+NAME	cscope.out	154833
+NAME	cscope.out	154851
+NAME	cscope.out	154869
+NAME	cscope.out	154919
+NAME	cscope.out	154961
+NAME	cscope.out	154981
+NAME	cscope.out	155033
+NAME	cscope.out	155095
+NAME	cscope.out	/^NAME$/
+NULL	cscope.out	27049
+NULL	cscope.out	53749
+OTHERWISE	LICENSE	23
+PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP	cscope.out	166941
+Pintos	LICENSE	1
+SHELL	Make.config	3
+SRCDIR	Makefile.build	3
+Software	LICENSE	11
+TAGS	Makefile	/^TAGS::$/
+TAGS_SOURCES	Makefile	/^TAGS_SOURCES = find $(TAGS_SUBDIRS) -name \\*.[chS]/
+TAGS_SUBDIRS	Makefile	/^TAGS_SUBDIRS = $(BUILD_SUBDIRS) devices lib$/
+TAID	Makefile	/^TAID = "yjkwon"$/
+TURNIN	Makefile	/^TURNIN := \/lusr\/bin\/turnin$/
+Trustees	LICENSE	4
+_FORCE_INLINES	cscope.out	/^_FORCE_INLINES$/
+__	cscope.out	81397
+__	cscope.out	91975
+__	cscope.out	119111
+__BYTE_ORDER	cscope.out	102253
+__BYTE_ORDER	cscope.out	102265
+__BYTE_ORDER	cscope.out	102369
+__BYTE_ORDER	cscope.out	102381
+__BYTE_ORDER	cscope.out	106355
+__BYTE_ORDER	cscope.out	106367
+__BYTE_ORDER	cscope.out	166919
+__GNUC_PREREQ	cscope.out	/^__GNUC_PREREQ$/
+__GNUC_PREREQ	cscope.out	/^__GNUC_PREREQ$/
+__GNUC_PREREQ	cscope.out	/^__GNUC_PREREQ$/
+__GNUC_PREREQ	cscope.out	/^__GNUC_PREREQ$/
+__LT_SPINLOCK_INIT	cscope.out	154927
+__NTH	cscope.out	/^__NTH$/
+__NTH	cscope.out	/^__NTH$/
+__NTH	cscope.out	/^__NTH$/
+__NTH	cscope.out	/^__NTH$/
+__NTH	cscope.out	/^__NTH$/
+__S_IFSOCK	cscope.out	/^__S_IFSOCK$/
+__THROW	cscope.out	114419
+__THROW	cscope.out	159853
+__THROW	cscope.out	159937
+__USE_EXTERN_INLINES	cscope.out	/^__USE_EXTERN_INLINES$/
+__USE_GNU	cscope.out	/^__USE_GNU$/
+__WCHAR_MAX__	cscope.out	/^__WCHAR_MAX__$/
+__WORDSIZE	cscope.out	77355
+__WORDSIZE	cscope.out	77393
+__WORDSIZE	cscope.out	77421
+__WORDSIZE	cscope.out	77449
+__WORDSIZE	cscope.out	77469
+__WORDSIZE	cscope.out	77505
+__WORDSIZE	cscope.out	77537
+__WORDSIZE	cscope.out	77577
+__WORDSIZE	cscope.out	77613
+__WORDSIZE	cscope.out	105733
+__WORDSIZE	cscope.out	105773
+__WORDSIZE	cscope.out	166905
+__c	cscope.out	117911
+__c	cscope.out	118495
+__c	cscope.out	118511
+__c	cscope.out	118553
+__c	cscope.out	118595
+__c	cscope.out	118665
+__c	cscope.out	118973
+__c	cscope.out	119031
+__de	cscope.out	119551
+__do_	cscope.out	156737
+__do_	cscope.out	168031
+__do_	cscope.out	168063
+__do_	cscope.out	168309
+__do_	cscope.out	168391
+__libc_±f	cscope.out	/^	`__libc_±f_ˇŒ$/
+__m	cscope.out	105559
+__m	cscope.out	105613
+__mask_was_ßve	cscope.out	167989
+__nŸ_f	cscope.out	168427
+__s	cscope.out	118135
+__s	cscope.out	122509
+__s	cscope.out	122969
+__sched_˝uco	cscope.out	/^	`__sched_˝ucou¡$/
+__sˇ	cscope.out	118979
+__sˇ	cscope.out	118985
+__sˇ	cscope.out	118991
+__sˇ	cscope.out	118997
+__sˇ	cscope.out	119003
+__sˇ	cscope.out	119009
+__sˇ	cscope.out	119015
+__sˇ	cscope.out	119041
+__sˇ	cscope.out	119051
+__sˇ	cscope.out	119061
+__sˇ	cscope.out	119071
+__sˇ	cscope.out	119081
+__sˇ	cscope.out	119091
+__sˇ	cscope.out	119101
+__u	cscope.out	105547
+__u	cscope.out	105601
+__u	cscope.out	105651
+__u	cscope.out	117903
+__u	cscope.out	117929
+__u	cscope.out	117943
+__u	cscope.out	117957
+__u	cscope.out	117971
+__u	cscope.out	117993
+__u	cscope.out	118007
+__u	cscope.out	118021
+__u	cscope.out	118043
+__u	cscope.out	118057
+__u	cscope.out	118071
+__u	cscope.out	118093
+__u	cscope.out	118107
+__u	cscope.out	118121
+__u	cscope.out	118499
+__u	cscope.out	118517
+__u	cscope.out	118531
+__u	cscope.out	118545
+__u	cscope.out	118559
+__u	cscope.out	118573
+__u	cscope.out	118587
+__u	cscope.out	118601
+__u	cscope.out	118615
+__u	cscope.out	118629
+__u	cscope.out	118643
+__u	cscope.out	118657
+__u	cscope.out	118671
+__u	cscope.out	118685
+__u	cscope.out	118699
+__u	cscope.out	118705
+__u	cscope.out	119019
+__u	cscope.out	119401
+__u	cscope.out	119433
+__u	cscope.out	119461
+__u	cscope.out	119481
+__u	cscope.out	119503
+__u	cscope.out	119517
+__u	cscope.out	119537
+__uc	cscope.out	117979
+__uc	cscope.out	118079
+__uc	cscope.out	118491
+__uc	cscope.out	119397
+__uc	cscope.out	119413
+__uc	cscope.out	119441
+__uc	cscope.out	119469
+__uc	cscope.out	119525
+__ui	cscope.out	117923
+__ui	cscope.out	117937
+__ui	cscope.out	117951
+__ui	cscope.out	117987
+__ui	cscope.out	118001
+__ui	cscope.out	118015
+__ui	cscope.out	118037
+__ui	cscope.out	118051
+__ui	cscope.out	118065
+__ui	cscope.out	118087
+__ui	cscope.out	118101
+__ui	cscope.out	118115
+__ui	cscope.out	118129
+__ui	cscope.out	118481
+__ui	cscope.out	118567
+__ui	cscope.out	118581
+__ui	cscope.out	118609
+__ui	cscope.out	118637
+__ui	cscope.out	118679
+__ui	cscope.out	118693
+__ui	cscope.out	119387
+__ui	cscope.out	119447
+__ui	cscope.out	119455
+__ui	cscope.out	119475
+__ui	cscope.out	119497
+__ui	cscope.out	119531
+__ui	cscope.out	119545
+__usi	cscope.out	117965
+__usi	cscope.out	118029
+__usi	cscope.out	118487
+__usi	cscope.out	118525
+__usi	cscope.out	118539
+__usi	cscope.out	118623
+__usi	cscope.out	118651
+__usi	cscope.out	119393
+__usi	cscope.out	119419
+__usi	cscope.out	119427
+__usi	cscope.out	119489
+__usi	cscope.out	119511
+__°rdu	cscope.out	/^	`__°rdup$/
+__°∫d	cscope.out	/^	`__°∫dup$/
+__£l	cscope.out	140831
+__©åibu	cscope.out	/^	`__©åibuã__$/
+__∑	cscope.out	167997
+__ª	cscope.out	105725
+__ª	cscope.out	105765
+__ª	cscope.out	105801
+__ªj	cscope.out	123455
+__ªje	cscope.out	123509
+__ªs	cscope.out	122061
+__ªs	cscope.out	122065
+__ªs	cscope.out	122521
+__ªs	cscope.out	140827
+__ªt	cscope.out	123471
+__ªt	cscope.out	123493
+__ªt	cscope.out	123527
+__˝lu•l	cscope.out	/^__˝lu•lus$/
+__˛‰a	cscope.out	/^	`__˛‰ame$/
+__ˇn˚l	cscope.out	168027
+__ˇn˚l	cscope.out	168059
+__ˇn˚l	cscope.out	168421
+__ˇn˚l_	cscope.out	168035
+__ˇn˚l_	cscope.out	168067
+__ˇn˚l_b	cscope.out	168411
+__ˇn˚l_b	cscope.out	168455
+__ˇn˚l_b	cscope.out	168461
+__ˇn˚l_jmp_b	cscope.out	167985
+__ˇn˚l_jmp_b	cscope.out	167993
+_sys_sigli	cscope.out	77059
+_vÆu	cscope.out	90667
+a	cscope.out	53761
+a	cscope.out	53769
+ags	cscope.out	25885
+all	Makefile	/^all::$/
+aux	cscope.out	25837
+b	cscope.out	25643
+b	cscope.out	25777
+b	cscope.out	25783
+b	cscope.out	25789
+b	cscope.out	25795
+c	cscope.out	25441
+c	cscope.out	27038
+ch	cscope.out	25821
+charge	LICENSE	7
+clean	Makefile	/^clean::$/
+com	cscope.out	/^com∑ª$/
+copy	LICENSE	10
+cscope	Makefile	/^cscope:: cscope.files$/
+cscope.files	Makefile	/^cscope.files::$/
+c⁄d_	cscope.out	16211
+c⁄d_	cscope.out	16337
+c⁄d_	cscope.out	16409
+distclean	Makefile	/^distclean:: clean$/
+distribute	LICENSE	11
+documentation	LICENSE	1
+dúe˘	cscope.out	16219
+e	cscope.out	65725
+fú°	cscope.out	16431
+f‹	cscope.out	25461
+f‹	cscope.out	25471
+g__huge_v	cscope.out	102279
+g__huge_vÆ	cscope.out	102395
+g__©åibuã_u	cscope.out	106387
+gadj	cscope.out	8681
+gadj1	cscope.out	8697
+gadj3	cscope.out	8689
+gadj3Loc	cscope.out	8693
+gadjLoc	cscope.out	8685
+gadv	cscope.out	8809
+gafÊi	cscope.out	8785
+gbad_a˘	cscope.out	8833
+gbad_∂	cscope.out	8881
+gba£_	cscope.out	25327
+gba£_	cscope.out	25333
+gba£_	cscope.out	25339
+gblock_by_rﬁ	cscope.out	85
+gbô	cscope.out	16463
+gcur	cscope.out	8777
+gdaGLoc	cscope.out	8893
+gdaGøm	cscope.out	8889
+gf	cscope.out	8825
+gf‹˚L	cscope.out	8829
+ggood_vî	cscope.out	8769
+gmode	cscope.out	5683
+gmë	cscope.out	8817
+gnoun	cscope.out	8753
+gnoun_™d	cscope.out	8729
+gnumbî	cscope.out	8801
+gquõ	cscope.out	38259
+gqu™t	cscope.out	8793
+granted	LICENSE	7
+gshi·ed_key	cscope.out	3785
+gtxq	cscope.out	5689
+gunshi·ed_key	cscope.out	3775
+gv_±	cscope.out	65683
+gã°_	cscope.out	38253
+gã°_	cscope.out	44675
+gö_somë	cscope.out	8873
+g°uf	cscope.out	8721
+g£rül	cscope.out	5711
+g©iv	cscope.out	27285
+g™i	cscope.out	8761
+gÆl_block	cscope.out	75
+g∂	cscope.out	8857
+gªœ	cscope.out	8865
+h™	cscope.out	50135
+i	cscope.out	/^189 i‡($/
+i	cscope.out	16257
+i	cscope.out	16263
+i	cscope.out	16387
+i	cscope.out	38157
+i	cscope.out	38161
+i	cscope.out	38195
+i	cscope.out	50131
+i	cscope.out	50139
+i	cscope.out	50177
+i	cscope.out	53765
+i	cscope.out	/^330 i‡($/
+i	cscope.out	65607
+i	cscope.out	65663
+i	cscope.out	/^184 i‡(($/
+i	cscope.out	/^1237 i‡($/
+i	cscope.out	/^55 i‡(($/
+i	cscope.out	/^495 i‡($/
+i	cscope.out	/^497 } i‡($/
+ib	cscope.out	16309
+ib_öde	cscope.out	16319
+k	cscope.out	16259
+k	cscope.out	16363
+key	cscope.out	4047
+key	cscope.out	4051
+loˇ	cscope.out	65623
+mPTHREAD_CANCEL_DEFERRED	cscope.out	167073
+mPTHREAD_CANCEL_ENABLE	cscope.out	167049
+mPTHREAD_INHERIT_SCHED	cscope.out	166949
+mPTHREAD_PROCESS_PRIVATE	cscope.out	166997
+mPTHREAD_RWLOCK_DEFAULT_NP	cscope.out	166887
+mPTHREAD_RWLOCK_PREFER_READER_NP	cscope.out	166875
+mPTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP	cscope.out	166883
+mPTHREAD_RWLOCK_PREFER_WRITER_NP	cscope.out	166879
+mPTHREAD_SCOPE_SYSTEM	cscope.out	166973
+mREG_GS	cscope.out	136769
+m_	cscope.out	137043
+m__	cscope.out	81441
+m__	cscope.out	92021
+m__w_c‹edum	cscope.out	129397
+m__w_c‹edum	cscope.out	129415
+m__w_ãrmsi	cscope.out	129419
+m__w_°	cscope.out	129451
+m__w_°›s	cscope.out	129437
+m__w_ªtcod	cscope.out	129401
+m__waô_	cscope.out	129455
+m__waô_ãrm	cscope.out	129423
+m__¨	cscope.out	167035
+m__¥e	cscope.out	167045
+m__Âªgs_m	cscope.out	136739
+m__Âªgs_m	cscope.out	137115
+m__ˇn	cscope.out	167039
+maux	cscope.out	61
+mbô	cscope.out	17809
+mbô_	cscope.out	17803
+mcs£	cscope.out	137029
+mcur	cscope.out	58211
+mcw	cscope.out	137013
+md©a	cscope.out	137037
+md©aof	cscope.out	137033
+mebp	cscope.out	58195
+mebx	cscope.out	58201
+merge	LICENSE	10
+mesi	cscope.out	58189
+mexp⁄	cscope.out	137005
+mgªg	cscope.out	137059
+miov_ba	cscope.out	147039
+miov_À	cscope.out	147045
+mli°_ñ	cscope.out	35
+modify	LICENSE	10
+mqu	cscope.out	81587
+mqu	cscope.out	81625
+msize	cscope.out	51
+msw	cscope.out	137017
+mty	cscope.out	45
+mtz_d°tim	cscope.out	90531
+mtz_möuãs	cscope.out	90527
+muc_lö	cscope.out	136715
+muc_lö	cscope.out	137091
+muc_mc⁄ã	cscope.out	136727
+muc_mc⁄ã	cscope.out	137103
+muc_sigmask	cscope.out	136733
+muc_sigmask	cscope.out	137109
+muc_°ac	cscope.out	136721
+muc_°ac	cscope.out	137097
+muc_Êag	cscope.out	136709
+muc_Êag	cscope.out	137085
+mwrôe_	cscope.out	69
+mè	cscope.out	137021
+mùof	cscope.out	137025
+m°©	cscope.out	137047
+mª	cscope.out	81575
+mª	cscope.out	81591
+mª	cscope.out	81629
+mªad_	cscope.out	65
+m√x	cscope.out	58217
+m«m	cscope.out	39
+m›	cscope.out	57
+mﬁdmas	cscope.out	137069
+mÂª	cscope.out	137065
+m¸	cscope.out	137073
+not_in_array	cscope.out	38200
+nŸ_ö	cscope.out	38189
+ow√	cscope.out	140805
+p	cscope.out	25875
+posô	cscope.out	16253
+posô	cscope.out	16273
+posô	cscope.out	16303
+posô	cscope.out	16345
+posô	cscope.out	16373
+projects	LICENSE	27
+publish	LICENSE	10
+r	cscope.out	65643
+r	cscope.out	65885
+restriction	LICENSE	9
+routö	cscope.out	168417
+s	cscope.out	16279
+s	cscope.out	16351
+s	cscope.out	16379
+s	cscope.out	25841
+s	cscope.out	27291
+s	cscope.out	27299
+s	cscope.out	27317
+so	LICENSE	12
+sublicense	LICENSE	11
+suc˚s	cscope.out	65731
+sv_h™d	cscope.out	77079
+sv_mask	cscope.out	77083
+sv_Êag	cscope.out	77087
+sys_sigli	cscope.out	77067
+t	cscope.out	38165
+t	cscope.out	65757
+t	cscope.out	140813
+tFILE	cscope.out	78319
+t_IO_lock_t	cscope.out	140733
+t__huge_vÆ_	cscope.out	102249
+t__huge_vÆf_	cscope.out	102365
+t__libc_key_t	cscope.out	154799
+t__libc_lock_t	cscope.out	154741
+t__libc_lock_t	cscope.out	154781
+t__libc_lock_ªcursive_	cscope.out	154737
+t__libc_lock_ªcursive_	cscope.out	154751
+t__libc_lock_ªcursive_	cscope.out	154787
+t__libc_rwlock_t	cscope.out	154769
+t__libc_rwlock_t	cscope.out	154775
+t__libc_rwlock_t	cscope.out	154793
+t__timez⁄e_±r	cscope.out	90539
+t__timez⁄e_±r	cscope.out	90545
+t__ôimî_which	cscope.out	90681
+t__ôimî_which	cscope.out	90685
+t__πld_lock_ªcursive	cscope.out	154759
+tags	Makefile	/^tags::$/
+tblksize_t	cscope.out	88399
+tblk˙t_	cscope.out	88377
+tblk˙t_	cscope.out	88383
+tdaddr_t	cscope.out	91317
+tdev_t	cscope.out	88237
+tdev_t	cscope.out	91127
+tdiv_t	cscope.out	81579
+tfd_mask	cscope.out	135531
+tfd_£	cscope.out	135513
+tfsid_t	cscope.out	91059
+tgid_t	cscope.out	88253
+tgid_t	cscope.out	91143
+tgªg_	cscope.out	136747
+tgªg£t	cscope.out	136759
+tid_t	cscope.out	91281
+tldiv_t	cscope.out	81595
+tloff_t	cscope.out	91071
+tmc⁄ãxt	cscope.out	136701
+tmc⁄ãxt	cscope.out	137077
+tmode_t	cscope.out	88295
+tmode_t	cscope.out	91159
+toff64_t	cscope.out	91237
+toff_t	cscope.out	16577
+toff_t	cscope.out	88331
+toff_t	cscope.out	88337
+toff_t	cscope.out	91211
+toff_t	cscope.out	91217
+tpid_t	cscope.out	76335
+tpid_t	cscope.out	91253
+tquad_t	cscope.out	91047
+tsig_t	cscope.out	76735
+tsig_©omic_	cscope.out	76267
+tsigh™dÀr	cscope.out	76725
+tsig£t_	cscope.out	76301
+tssize_t	cscope.out	91297
+tsu£c⁄ds	cscope.out	91417
+tu_ch	cscope.out	91023
+tu_l⁄	cscope.out	91041
+tu_quad_t	cscope.out	91053
+tu_sh‹	cscope.out	91029
+tu_ö	cscope.out	91035
+tuc⁄ãxt	cscope.out	136743
+tuc⁄ãxt	cscope.out	137119
+tuid_t	cscope.out	76355
+tuid_t	cscope.out	88353
+tuid_t	cscope.out	91191
+tul⁄	cscope.out	91441
+turnin.tar	Makefile	/^turnin.tar: clean$/
+turnin_fs	Makefile	/^turnin_fs: turnin.tar$/
+turnin_threads	Makefile	/^turnin_threads: turnin.tar$/
+turnin_user	Makefile	/^turnin_user: turnin.tar$/
+turnin_vm	Makefile	/^turnin_vm: turnin.tar$/
+tush‹	cscope.out	91445
+tuö	cscope.out	91449
+tuöt16_	cscope.out	77375
+tuöt32_	cscope.out	77383
+tuöt64_	cscope.out	77405
+tuöt8_	cscope.out	77371
+tuöt_Àa°	cscope.out	77437
+tuöt_Àa°1	cscope.out	77441
+tuöt_Àa°3	cscope.out	77445
+tuöt_Àa°6	cscope.out	77461
+tuöt_Á°	cscope.out	77501
+tuöt_Á°1	cscope.out	77521
+tuöt_Á°3	cscope.out	77513
+tuöt_Á°3	cscope.out	77525
+tuöt_Á°6	cscope.out	77517
+tuöt_Á°6	cscope.out	77533
+tuötmax_	cscope.out	77585
+tuötmax_	cscope.out	77601
+tuöç	cscope.out	77555
+tuöç	cscope.out	77573
+tu£c⁄ds	cscope.out	91401
+tv_u£	cscope.out	90901
+tv_u£	cscope.out	90955
+tv_£	cscope.out	90945
+tñem_t	cscope.out	17783
+töo64_	cscope.out	91111
+töo_	cscope.out	88273
+töo_	cscope.out	88279
+töo_	cscope.out	91085
+töo_	cscope.out	91091
+töt16_	cscope.out	77347
+töt32_	cscope.out	77351
+töt64_	cscope.out	77367
+töt8_	cscope.out	77343
+töt_Àa°	cscope.out	77409
+töt_Àa°1	cscope.out	77413
+töt_Àa°3	cscope.out	77417
+töt_Àa°6	cscope.out	77433
+töt_Á°	cscope.out	77465
+töt_Á°1	cscope.out	77485
+töt_Á°3	cscope.out	77477
+töt_Á°3	cscope.out	77489
+töt_Á°6	cscope.out	77481
+töt_Á°6	cscope.out	77497
+tötmax_	cscope.out	77593
+töç	cscope.out	77563
+t∆ök	cscope.out	88311
+t∆ök	cscope.out	91175
+tŒdiv_	cscope.out	81633
+tŸÆ	cscope.out	16243
+tŸÆ	cscope.out	16367
+tÂªg£	cscope.out	137053
+tˇddr_	cscope.out	91323
+us	cscope.out	/^°©us$/
+use	LICENSE	10
+vÆid_	cscope.out	/^	`vÆid_¨g$/
+vÆu	cscope.out	25487
+vÆu	cscope.out	25501
+vÆu	cscope.out	25513
+vÆu	cscope.out	25525
+vÆu	cscope.out	25537
+vÆu	cscope.out	25551
+vÆu	cscope.out	25563
+vÆu	cscope.out	25575
+vÆu	cscope.out	25589
+vÆu	cscope.out	25637
+vÆu	cscope.out	25657
+vÆu	cscope.out	25669
+vÆu	cscope.out	25681
+vÆu	cscope.out	25693
+vÆu	cscope.out	25707
+vÆu	cscope.out	25719
+vÆu	cscope.out	25731
+vÆu	cscope.out	25759
+vÆu	cscope.out	27263
+vÆu	cscope.out	27313
+vÆu	cscope.out	27321
+vÆu	cscope.out	27331
+vÆu	cscope.out	27335
+wrôa	cscope.out	65187
+x36	cscope.out	4020
+x8	cscope.out	105572
+x80	cscope.out	105626
+xe01d	cscope.out	4036
+xe038	cscope.out	4028

@@ -116,7 +116,7 @@ inode_create (block_sector_t sector, off_t length)
   struct inode_disk *disk_inode = NULL;
   block_sector_t total_sectors;
   bool success = false;
-
+  
   ASSERT (length >= 0);
 
   /* If this assertion fails, the inode structure is not exactly
@@ -140,14 +140,17 @@ inode_create (block_sector_t sector, off_t length)
       /* create direct / indirect data blocks */
       if (free_map_unused () >= total_sectors + 1) 
         {
-          block_write (fs_device, sector, disk_inode);
-
 	  write_sectors_to_disk (total_sectors, disk_inode);
+
+          block_write (fs_device, sector, disk_inode);
           
           success = true; 
         } 
       free (disk_inode);
     }
+
+  printf ("inode_create: length is %d\n", length);
+
   return success;
 }
 
@@ -184,6 +187,9 @@ inode_open (block_sector_t sector)
   inode->deny_write_cnt = 0;
   inode->removed = false;
   block_read (fs_device, inode->sector, &inode->data);
+
+  printf ("inode_open: length is %d\n", inode->data.length);
+  
   return inode;
 }
 
@@ -209,7 +215,7 @@ inode_get_inumber (const struct inode *inode)
 void
 inode_close (struct inode *inode) 
 {
-  block_sector_t index, first_ib_index, second_ib_index;
+  block_sector_t index, ib, i, k, r;
   struct indirect_block *first_ib, *second_ib;
 
   /* Ignore null pointer. */
@@ -225,29 +231,33 @@ inode_close (struct inode *inode)
       /* Deallocate blocks if removed. */
       if (inode->removed) 
         {
-
 	    index = inode->data.length / BLOCK_SECTOR_SIZE;
 
 	    // direct block
-	    if (index < DIRECT_BLOCK)
+	    for (i = 0; i < DIRECT_BLOCK && i < index; i++)
 	    {
-	      return inode->data.sectors[index];
+	      free_map_release(inode->data.sectors[i], 1);
 	    }
-	    else
+	    if ( i < index )
 	    {
 	      // number of entry in first level ib
-	      first_ib_index = (index - DIRECT_BLOCK) / 128;
-	      second_ib_index = (index - DIRECT_BLOCK) % 128;
-
-	      // read first level ib
-	      block_read (fs_device, inode->data.ib, first_ib);
-
-	      // read second level ib
-	      block_read (fs_device, first_ib->sectors[first_ib_index], second_ib);
-
-	      return second_ib->sectors[second_ib_index];
+	      ib = inode->data.ib;
+	      block_read (fs_device, ib, first_ib);
+	      k = 0;
+              while( i < index )
+	      {
+	        block_read (fs_device, first_ib->sectors[k], second_ib);
+	        r = 0;
+		while( i < index && r < 128 )
+		{
+		  free_map_release(second_ib->sectors[r], 1);
+		  r++;
+		  i++;
+		}
+		free_map_release(first_ib->sectors[k], 1);
+		k++;
+	      }
 	    }
-	  
 	  // free inode
           free_map_release (inode->sector, 1);
         }

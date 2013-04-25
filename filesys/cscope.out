@@ -1,4 +1,4 @@
-cscope 15 /v/filer4b/v38q001/menie482/workspace/439-fs/filesys               0000323655
+cscope 15 /v/filer4b/v38q001/menie482/workspace/439-fs/filesys               0000326335
 	@directory.c
 
 1 
@@ -2319,6 +2319,30 @@ NULL
 	}
 }
 
+88 
+size_t
+
+
+89 
+	$ä“_m­_unu£d
+ ()
+
+91  
+	`b™m­_couÁ
+ (
+ä“_m­
+, 0, 
+	`block_size
+ (
+fs_deviû
+), 
+çl£
+);
+
+92 
+	}
+}
+
 	@free-map.h
 
 1 #iâdeà
@@ -2380,6 +2404,12 @@ block_£ùÜ_t
 , 
 size_t
 );
+
+17 
+size_t
+ 
+ä“_m­_unu£d
+ ();
 
 	@fsutil.c
 
@@ -3281,51 +3311,83 @@ fsutž_­³nd
 
 	)
 
-15 
+12 
+	#DIRECT_BLOCK
+ 124
+
+	)
+
+13 
+	#MAX_BLOCK_NUMBER
+ 16637
+
+14 
+
+	)
+
+16 
+size_t
+ 
+compu‹_tÙ®_£ùÜs
+ (size_ˆ
+£ùÜs
+);
+
+20 
 	sšode_disk
 
 
-17 
-block_£ùÜ_t
- 
-	m¡¬t
-;
-
-18 
+22 
 block_£ùÜ_t
  
 	m£ùÜs
-[12];
+[
+DIRECT_BLOCK
+];
 
-19 
+23 
+block_£ùÜ_t
+ 
+	mib
+;
+
+24 
 boÞ
  
 	mis_dœeùÜy
 ;
 
-20 
+25 
+	m·ddšg
+[3];
+
+26 
 off_t
  
 	mËngth
 ;
 
-21 
+27 
 	mmagic
 ;
 
-22 
-ušt32_t
- 
-	munu£d
-[125];
+31 
+	sšdœeù_block
 
-27 
+
+33 
+block_£ùÜ_t
+ 
+	m£ùÜs
+[128];
+
+38 
 šlše
  
 size_t
 
 
-28 
+39 
 	$by‹s_to_£ùÜs
  (
 off_t
@@ -3333,7 +3395,7 @@ off_t
 size
 )
 
-30  
+41  
 	`DIV_ROUND_UP
  (
 size
@@ -3341,51 +3403,51 @@ size
 BLOCK_SECTOR_SIZE
 );
 
-31 
+42 
 	}
 }
 
-34 
+45 
 	sšode
 
 
-36 
+47 
 li¡_–em
  
 	m–em
 ;
 
-37 
+48 
 block_£ùÜ_t
  
 	m£ùÜ
 ;
 
-38 
+49 
 	mÝ’_út
 ;
 
-39 
+50 
 boÞ
  
 	m»moved
 ;
 
-40 
+51 
 	md’y_wr™e_út
 ;
 
-41 
+52 
 šode_disk
  
 	md©a
 ;
 
-48 
+62 
 block_£ùÜ_t
 
 
-49 
+63 
 	$by‹_to_£ùÜ
  (cÚ¡ 
 šode
@@ -3395,7 +3457,7 @@ off_t
 pos
 )
 
-51 
+65 
 	`ASSERT
  (
 šode
@@ -3403,7 +3465,25 @@ pos
 NULL
 );
 
-52 ià(
+66 
+block_£ùÜ_t
+ 
+šdex
+, 
+fœ¡_ib_šdex
+, 
+£cÚd_ib_šdex
+;
+
+67 
+šdœeù_block
+ *
+fœ¡_ib
+, *
+£cÚd_ib
+;
+
+69 ià(
 pos
  < 
 šode
@@ -3413,47 +3493,111 @@ d©a
 Ëngth
 )
 
-53  
-šode
-->
-d©a
-.
-¡¬t
- + 
+71 
+šdex
+ = 
 pos
  / 
 BLOCK_SECTOR_SIZE
 ;
 
-56 
+74 ià(
+šdex
+ < 
+DIRECT_BLOCK
+)
+
+76  
+šode
+->
+d©a
+.
+£ùÜs
+[
+šdex
+];
+
+81 
+fœ¡_ib_šdex
+ = (
+šdex
+ - 
+DIRECT_BLOCK
+) / 128;
+
+82 
+£cÚd_ib_šdex
+ = (
+šdex
+ - 
+DIRECT_BLOCK
+) % 128;
+
+85 
+	`block_»ad
+ (
+fs_deviû
+, 
+šode
+->
+d©a
+.
+ib
+, 
+fœ¡_ib
+);
+
+88 
+	`block_»ad
+ (
+fs_deviû
+, 
+fœ¡_ib
+->
+£ùÜs
+[
+fœ¡_ib_šdex
+], 
+£cÚd_ib
+);
+
+90  
+£cÚd_ib
+->
+£ùÜs
+[
+£cÚd_ib_šdex
+];
+
+95 
 	}
 }
 
-60 
+99 
 li¡
  
 	gÝ’_šodes
 ;
 
-64 
+103 
 	$šode_š™
  ()
 
-66 
+105 
 	`li¡_š™
  (&
 Ý’_šodes
 );
 
-67 
+106 
 	}
 }
 
-74 
+113 
 boÞ
 
 
-75 
+114 
 	$šode_ü—‹
  (
 block_£ùÜ_t
@@ -3465,7 +3609,7 @@ off_t
 Ëngth
 )
 
-77 
+116 
 šode_disk
  *
 disk_šode
@@ -3473,7 +3617,13 @@ disk_šode
 NULL
 ;
 
-78 
+117 
+block_£ùÜ_t
+ 
+tÙ®_£ùÜs
+;
+
+118 
 boÞ
  
 sucûss
@@ -3481,13 +3631,13 @@ sucûss
 çl£
 ;
 
-80 
+120 
 	`ASSERT
  (
 Ëngth
  >= 0);
 
-84 
+124 
 	`ASSERT
  ( *
 disk_šode
@@ -3495,19 +3645,19 @@ disk_šode
 BLOCK_SECTOR_SIZE
 );
 
-86 
+126 
 disk_šode
  = 
 	`ÿÎoc
  (1,  *disk_inode);
 
-87 ià(
+127 ià(
 disk_šode
  !ð
 NULL
 )
 
-89 
+129 
 size_t
  
 £ùÜs
@@ -3517,13 +3667,31 @@ size_t
 Ëngth
 );
 
-90 
+130 
+tÙ®_£ùÜs
+ = 
+	`compu‹_tÙ®_£ùÜs
+ (
+£ùÜs
+);
+
+131 ià(
+tÙ®_£ùÜs
+ > 
+MAX_BLOCK_NUMBER
+)
+
+134  
+çl£
+;
+
+137 
 disk_šode
 ->
 Ëngth
  =†ength;
 
-91 
+138 
 disk_šode
 ->
 magic
@@ -3531,17 +3699,13 @@ magic
 INODE_MAGIC
 ;
 
-92 ià(
-	`ä“_m­_®loÿ‹
- (
-£ùÜs
-, &
-disk_šode
-->
-¡¬t
-))
+141 ià(
+	`ä“_m­_unu£d
+ (è>ð
+tÙ®_£ùÜs
+ + 1)
 
-94 
+143 
 	`block_wr™e
  (
 fs_deviû
@@ -3551,67 +3715,39 @@ fs_deviû
 disk_šode
 );
 
-95 ià(
-£ùÜs
- > 0)
-
-97 
-z”os
-[
-BLOCK_SECTOR_SIZE
-];
-
-98 
-size_t
- 
-i
-;
-
-100 
-i
- = 0; i < 
-£ùÜs
-; i++)
-
-101 
-	`block_wr™e
+145 
+	`wr™e_£ùÜs_to_disk
  (
-fs_deviû
+tÙ®_£ùÜs
 , 
 disk_šode
-->
-¡¬t
- + 
-i
-, 
-z”os
 );
 
-103 
+147 
 sucûss
  = 
 Œue
 ;
 
-105 
+149 
 	`ä“
  (
 disk_šode
 );
 
-107  
+151  
 sucûss
 ;
 
-108 
+152 
 	}
 }
 
-113 
+157 
 šode
  *
 
-114 
+158 
 	$šode_Ý’
  (
 block_£ùÜ_t
@@ -3619,17 +3755,17 @@ block_£ùÜ_t
 £ùÜ
 )
 
-116 
+160 
 li¡_–em
  *
 e
 ;
 
-117 
+161 
 šode
  *inode;
 
-120 
+164 
 e
  = 
 	`li¡_begš
@@ -3639,13 +3775,13 @@ e
 	`li¡_’d
  (&open_inodes);
 
-121 
+165 
 e
  = 
 	`li¡_Ãxt
  (e))
 
-123 
+167 
 šode
  = 
 	`li¡_’Œy
@@ -3655,39 +3791,39 @@ e
 –em
 );
 
-124 ià(
+168 ià(
 šode
 ->
 £ùÜ
  == sector)
 
-126 
+170 
 	`šode_»Ý’
  (
 šode
 );
 
-127  
+171  
 šode
 ;
 
-132 
+176 
 šode
  = 
 	`m®loc
  ( *inode);
 
-133 ià(
+177 ià(
 šode
  =ð
 NULL
 )
 
-134  
+178  
 NULL
 ;
 
-137 
+181 
 	`li¡_push_äÚt
  (&
 Ý’_šodes
@@ -3697,25 +3833,25 @@ NULL
 –em
 );
 
-138 
+182 
 šode
 ->
 £ùÜ
  = sector;
 
-139 
+183 
 šode
 ->
 Ý’_út
  = 1;
 
-140 
+184 
 šode
 ->
 d’y_wr™e_út
  = 0;
 
-141 
+185 
 šode
 ->
 »moved
@@ -3723,7 +3859,7 @@ d’y_wr™e_út
 çl£
 ;
 
-142 
+186 
 	`block_»ad
  (
 fs_deviû
@@ -3735,83 +3871,105 @@ fs_deviû
 d©a
 );
 
-143  
+187  
 šode
 ;
 
-144 
+188 
 	}
 }
 
-147 
+191 
 šode
  *
 
-148 
+192 
 	$šode_»Ý’
  (
 šode
  *inode)
 
-150 ià(
+194 ià(
 šode
  !ð
 NULL
 )
 
-151 
+195 
 šode
 ->
 Ý’_út
 ++;
 
-152  
+196  
 šode
 ;
 
-153 
+197 
 	}
 }
 
-156 
+200 
 block_£ùÜ_t
 
 
-157 
+201 
 	$šode_g‘_šumb”
  (cÚ¡ 
 šode
  *inode)
 
-159  
+203  
 šode
 ->
 £ùÜ
 ;
 
-160 
+204 
 	}
 }
 
-166 
+210 
 	$šode_þo£
  (
 šode
  *inode)
 
-169 ià(
+212 
+block_£ùÜ_t
+ 
+šdex
+, 
+ib
+, 
+i
+, 
+k
+, 
+r
+;
+
+213 
+šdœeù_block
+ *
+fœ¡_ib
+, *
+£cÚd_ib
+;
+
+216 ià(
 šode
  =ð
 NULL
 )
 
-173 ià(--
+220 ià(--
 šode
 ->
 Ý’_út
  == 0)
 
-176 
+223 
 	`li¡_»move
  (&
 šode
@@ -3819,13 +3977,137 @@ NULL
 –em
 );
 
-179 ià(
+226 ià(
 šode
 ->
 »moved
 )
 
-181 
+228 
+šdex
+ = 
+šode
+->
+d©a
+.
+Ëngth
+ / 
+BLOCK_SECTOR_SIZE
+;
+
+231 
+i
+ = 0; i < 
+DIRECT_BLOCK
+ && i < 
+šdex
+; i++)
+
+233 
+	`ä“_m­_»Ëa£
+(
+šode
+->
+d©a
+.
+£ùÜs
+[
+i
+], 1);
+
+235 iàÐ
+i
+ < 
+šdex
+ )
+
+238 
+ib
+ = 
+šode
+->
+d©a
+.ib;
+
+239 
+	`block_»ad
+ (
+fs_deviû
+, 
+ib
+, 
+fœ¡_ib
+);
+
+240 
+k
+ = 0;
+
+241  
+i
+ < 
+šdex
+ )
+
+243 
+	`block_»ad
+ (
+fs_deviû
+, 
+fœ¡_ib
+->
+£ùÜs
+[
+k
+], 
+£cÚd_ib
+);
+
+244 
+r
+ = 0;
+
+245  
+i
+ < 
+šdex
+ && 
+r
+ < 128 )
+
+247 
+	`ä“_m­_»Ëa£
+(
+£cÚd_ib
+->
+£ùÜs
+[
+r
+], 1);
+
+248 
+r
+++;
+
+249 
+i
+++;
+
+251 
+	`ä“_m­_»Ëa£
+(
+fœ¡_ib
+->
+£ùÜs
+[
+k
+], 1);
+
+252 
+k
+++;
+
+256 
 	`ä“_m­_»Ëa£
  (
 šode
@@ -3833,43 +4115,23 @@ NULL
 £ùÜ
 , 1);
 
-182 
-	`ä“_m­_»Ëa£
- (
-šode
-->
-d©a
-.
-¡¬t
-,
-
-183 
-	`by‹s_to_£ùÜs
- (
-šode
-->
-d©a
-.
-Ëngth
-));
-
-186 
+259 
 	`ä“
  (
 šode
 );
 
-188 
+261 
 	}
 }
 
-193 
+266 
 	$šode_»move
  (
 šode
  *inode)
 
-195 
+268 
 	`ASSERT
  (
 šode
@@ -3877,7 +4139,7 @@ d©a
 NULL
 );
 
-196 
+269 
 šode
 ->
 »moved
@@ -3885,15 +4147,15 @@ NULL
 Œue
 ;
 
-197 
+270 
 	}
 }
 
-202 
+275 
 off_t
 
 
-203 
+276 
 	$šode_»ad_©
  (
 šode
@@ -3907,7 +4169,7 @@ size
 off£t
 )
 
-205 
+278 
 ušt8_t
  *
 bufãr
@@ -3915,13 +4177,13 @@ bufãr
 bufãr_
 ;
 
-206 
+279 
 off_t
  
 by‹s_»ad
  = 0;
 
-207 
+280 
 ušt8_t
  *
 bounû
@@ -3929,11 +4191,11 @@ bounû
 NULL
 ;
 
-209 
+282 
 size
  > 0)
 
-212 
+285 
 block_£ùÜ_t
  
 £ùÜ_idx
@@ -3945,7 +4207,7 @@ block_£ùÜ_t
 off£t
 );
 
-213 
+286 
 £ùÜ_ofs
  = 
 off£t
@@ -3953,7 +4215,7 @@ off£t
 BLOCK_SECTOR_SIZE
 ;
 
-216 
+289 
 off_t
  
 šode_Ëá
@@ -3965,7 +4227,7 @@ off_t
 off£t
 ;
 
-217 
+290 
 £ùÜ_Ëá
  = 
 BLOCK_SECTOR_SIZE
@@ -3973,7 +4235,7 @@ BLOCK_SECTOR_SIZE
 £ùÜ_ofs
 ;
 
-218 
+291 
 mš_Ëá
  = 
 šode_Ëá
@@ -3981,7 +4243,7 @@ mš_Ëá
 £ùÜ_Ëá
  ? inode_left : sector_left;
 
-221 
+294 
 chunk_size
  = 
 size
@@ -3989,11 +4251,11 @@ size
 mš_Ëá
  ? size : min_left;
 
-222 ià(
+295 ià(
 chunk_size
  <= 0)
 
-225 ià(
+298 ià(
 £ùÜ_ofs
  =ð0 && 
 chunk_size
@@ -4001,7 +4263,7 @@ chunk_size
 BLOCK_SECTOR_SIZE
 )
 
-228 
+301 
 	`block_»ad
  (
 fs_deviû
@@ -4013,13 +4275,13 @@ bufãr
 by‹s_»ad
 );
 
-234 ià(
+307 ià(
 bounû
  =ð
 NULL
 )
 
-236 
+309 
 bounû
  = 
 	`m®loc
@@ -4027,13 +4289,13 @@ bounû
 BLOCK_SECTOR_SIZE
 );
 
-237 ià(
+310 ià(
 bounû
  =ð
 NULL
 )
 
-240 
+313 
 	`block_»ad
  (
 fs_deviû
@@ -4043,7 +4305,7 @@ fs_deviû
 bounû
 );
 
-241 
+314 
 	`memýy
  (
 bufãr
@@ -4057,43 +4319,43 @@ bounû
 chunk_size
 );
 
-245 
+318 
 size
  -ð
 chunk_size
 ;
 
-246 
+319 
 off£t
  +ð
 chunk_size
 ;
 
-247 
+320 
 by‹s_»ad
  +ð
 chunk_size
 ;
 
-249 
+322 
 	`ä“
  (
 bounû
 );
 
-251  
+324  
 by‹s_»ad
 ;
 
-252 
+325 
 	}
 }
 
-259 
+332 
 off_t
 
 
-260 
+333 
 	$šode_wr™e_©
  (
 šode
@@ -4105,13 +4367,13 @@ off_t
 size
 ,
 
-261 
+334 
 off_t
  
 off£t
 )
 
-263 cÚ¡ 
+336 cÚ¡ 
 ušt8_t
  *
 bufãr
@@ -4119,13 +4381,13 @@ bufãr
 bufãr_
 ;
 
-264 
+337 
 off_t
  
 by‹s_wr™‹n
  = 0;
 
-265 
+338 
 ušt8_t
  *
 bounû
@@ -4133,17 +4395,17 @@ bounû
 NULL
 ;
 
-267 ià(
+340 ià(
 šode
 ->
 d’y_wr™e_út
 )
 
-270 
+343 
 size
  > 0)
 
-273 
+346 
 block_£ùÜ_t
  
 £ùÜ_idx
@@ -4155,7 +4417,7 @@ block_£ùÜ_t
 off£t
 );
 
-274 
+347 
 £ùÜ_ofs
  = 
 off£t
@@ -4163,7 +4425,7 @@ off£t
 BLOCK_SECTOR_SIZE
 ;
 
-277 
+350 
 off_t
  
 šode_Ëá
@@ -4175,7 +4437,7 @@ off_t
 off£t
 ;
 
-278 
+351 
 £ùÜ_Ëá
  = 
 BLOCK_SECTOR_SIZE
@@ -4183,7 +4445,7 @@ BLOCK_SECTOR_SIZE
 £ùÜ_ofs
 ;
 
-279 
+352 
 mš_Ëá
  = 
 šode_Ëá
@@ -4191,7 +4453,7 @@ mš_Ëá
 £ùÜ_Ëá
  ? inode_left : sector_left;
 
-282 
+355 
 chunk_size
  = 
 size
@@ -4199,11 +4461,11 @@ size
 mš_Ëá
  ? size : min_left;
 
-283 ià(
+356 ià(
 chunk_size
  <= 0)
 
-286 ià(
+359 ià(
 £ùÜ_ofs
  =ð0 && 
 chunk_size
@@ -4211,7 +4473,7 @@ chunk_size
 BLOCK_SECTOR_SIZE
 )
 
-289 
+362 
 	`block_wr™e
  (
 fs_deviû
@@ -4223,13 +4485,13 @@ bufãr
 by‹s_wr™‹n
 );
 
-294 ià(
+367 ià(
 bounû
  =ð
 NULL
 )
 
-296 
+369 
 bounû
  = 
 	`m®loc
@@ -4237,13 +4499,13 @@ bounû
 BLOCK_SECTOR_SIZE
 );
 
-297 ià(
+370 ià(
 bounû
  =ð
 NULL
 )
 
-304 ià(
+377 ià(
 £ùÜ_ofs
  > 0 || 
 chunk_size
@@ -4251,7 +4513,7 @@ chunk_size
 £ùÜ_Ëá
 )
 
-305 
+378 
 	`block_»ad
  (
 fs_deviû
@@ -4261,7 +4523,7 @@ fs_deviû
 bounû
 );
 
-307 
+380 
 	`mem£t
  (
 bounû
@@ -4269,7 +4531,7 @@ bounû
 BLOCK_SECTOR_SIZE
 );
 
-308 
+381 
 	`memýy
  (
 bounû
@@ -4283,7 +4545,7 @@ by‹s_wr™‹n
 chunk_size
 );
 
-309 
+382 
 	`block_wr™e
  (
 fs_deviû
@@ -4293,51 +4555,51 @@ fs_deviû
 bounû
 );
 
-313 
+386 
 size
  -ð
 chunk_size
 ;
 
-314 
+387 
 off£t
  +ð
 chunk_size
 ;
 
-315 
+388 
 by‹s_wr™‹n
  +ð
 chunk_size
 ;
 
-317 
+390 
 	`ä“
  (
 bounû
 );
 
-319  
+392  
 by‹s_wr™‹n
 ;
 
-320 
+393 
 	}
 }
 
-325 
+398 
 	$šode_d’y_wr™e
  (
 šode
  *inode)
 
-327 
+400 
 šode
 ->
 d’y_wr™e_út
 ++;
 
-328 
+401 
 	`ASSERT
  (
 šode
@@ -4347,17 +4609,17 @@ d’y_wr™e_út
 Ý’_út
 );
 
-329 
+402 
 	}
 }
 
-335 
+408 
 	$šode_®low_wr™e
  (
 šode
  *inode)
 
-337 
+410 
 	`ASSERT
  (
 šode
@@ -4365,7 +4627,7 @@ d’y_wr™e_út
 d’y_wr™e_út
  > 0);
 
-338 
+411 
 	`ASSERT
  (
 šode
@@ -4375,27 +4637,27 @@ d’y_wr™e_út
 Ý’_út
 );
 
-339 
+412 
 šode
 ->
 d’y_wr™e_út
 --;
 
-340 
+413 
 	}
 }
 
-343 
+416 
 off_t
 
 
-344 
+417 
 	$šode_Ëngth
  (cÚ¡ 
 šode
  *inode)
 
-346  
+419  
 šode
 ->
 d©a
@@ -4403,7 +4665,261 @@ d©a
 Ëngth
 ;
 
-347 
+420 
+	}
+}
+
+425 
+size_t
+
+
+426 
+	$compu‹_tÙ®_£ùÜs
+ (
+size_t
+ 
+£ùÜs
+)
+
+428 
+couÁ
+;
+
+429 ifÐ
+£ùÜs
+ <ð
+DIRECT_BLOCK
+ )
+
+431  
+£ùÜs
+;
+
+435 
+£cÚd_Ëv–
+ = ( 
+£ùÜs
+ - 
+DIRECT_BLOCK
+ ) / 128;
+
+436 
+šdœeù_£ùÜs
+ = 
+£ùÜs
+ - 
+DIRECT_BLOCK
+;
+
+438  
+šdœeù_£ùÜs
+ + 
+£cÚd_Ëv–
+ + 1 + 
+DIRECT_BLOCK
+;
+
+440 
+	}
+}
+
+444 
+	$wr™e_£ùÜs_to_disk
+Ð
+block_£ùÜ_t
+ 
+tÙ®_£ùÜs
+, 
+šode_disk
+ *
+disk_šode
+ )
+
+446 
+block_£ùÜ_t
+ 
+pos™iÚ
+;
+
+447 
+i
+, 
+k
+;
+
+450  
+i
+ = 0; i < 
+tÙ®_£ùÜs
+ && i < 
+DIRECT_BLOCK
+; i++ )
+
+452 
+	`ä“_m­_®loÿ‹
+(1, &
+pos™iÚ
+ );
+
+453 
+disk_šode
+->
+£ùÜs
+[
+i
+] = 
+pos™iÚ
+;
+
+457 ifÐ
+i
+ < 
+tÙ®_£ùÜs
+ )
+
+460 
+šdœeù_block
+ *
+fœ¡_Ëv–
+ = 
+	`ÿÎoc
+(1,  (indirect_block));
+
+461 
+	`ä“_m­_®loÿ‹
+(1, &
+pos™iÚ
+ );
+
+462 
+disk_šode
+->
+ib
+ = 
+pos™iÚ
+;
+
+463 
+i
+++;
+
+466 
+ib_šdex
+ = 0;
+
+467  
+i
+ < 
+tÙ®_£ùÜs
+ )
+
+469 
+	`ASSERT
+ (
+ib_šdex
+ < 128);
+
+471 
+šdœeù_block
+ *
+£cÚd_Ëv–
+ = 
+	`ÿÎoc
+(1,  (indirect_block));
+
+472 
+	`ä“_m­_®loÿ‹
+(1, &
+pos™iÚ
+ );
+
+473 
+fœ¡_Ëv–
+->
+£ùÜs
+[
+ib_šdex
+] = 
+pos™iÚ
+;
+
+474 
+i
+++;
+
+477  
+k
+ = 0; (k < 128è&& (
+i
+ + k < 
+tÙ®_£ùÜs
+); k++ )
+
+479 
+	`ä“_m­_®loÿ‹
+(1, &
+pos™iÚ
+ );
+
+480 
+£cÚd_Ëv–
+->
+£ùÜs
+[
+k
+] = 
+pos™iÚ
+;
+
+483 
+i
+ = i + 
+k
+;
+
+486 
+	`block_wr™e
+ (
+fs_deviû
+, 
+fœ¡_Ëv–
+->
+£ùÜs
+[
+ib_šdex
+], 
+£cÚd_Ëv–
+);
+
+487 
+	`ä“
+Ð
+£cÚd_Ëv–
+ );
+
+488 
+ib_šdex
+++;
+
+492 
+	`block_wr™e
+ (
+fs_deviû
+, 
+disk_šode
+->
+ib
+, 
+fœ¡_Ëv–
+);
+
+493 
+	`ä“
+Ð
+fœ¡_Ëv–
+ );
+
+495 
 	}
 }
 
